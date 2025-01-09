@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+<input type="text" id="display">
+    
+<div class="row">
+    <button onclick="btnClick(`7`)">7</button>
+    <button onclick="btnClick(`8`)">8</button>
+    <button onclick="btnClick(`9`)">9</button>
+    <button onclick="btnClick(`/`)">/</button>
+</div>  
+<div class="row">
+    <button onclick="btnClick(`4`)">4</button>
+    <button onclick="btnClick(`5`)">5</button>
+    <button onclick="btnClick(`6`)">6</button>
+    <button onclick="btnClick(`*`)">*</button>
+</div>  
+ <div class="row">
+    <button onclick="btnClick(`1`)">1</button>
+    <button onclick="btnClick(`2`)">2</button>
+    <button onclick="btnClick(`3`)">3</button>
+    <button onclick="btnClick(`+`)">+</button>
+ </div>
+
+ <div class="clear">
+
+    <button onclick=" clearDisplay()">Clr</button>
+    <button onclick="btnClick(`0`)">0</button>
+    <button onclick="btnClick(`.`)">.</button>
+    <button onclick="btnClick(`-`)">-</button>
+
+ </div>
+<div class="operators_row">
+    <button onclick=" DellastCharacter()">Del</button>  
+    <button onclick="solve()">=</button>
+
+
+
+</div>
+    
+</div>
+<script src="calculator.js"></script>
+
+</body>
+</html>
