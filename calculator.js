@@ -12,7 +12,7 @@ function btnClick(val) {
       lastChar === "/") &&
     (val === "+" || val === "-" || val === "*" || val === "/")
   ) {
-    cal.value = currentValue.slice(0, -1);
+    cal.value = currentValue.slice(0, -1) + val;
   } else {
     cal.value += val;
   }
@@ -32,13 +32,3 @@ function DellastCharacter() {
   let deleted = deleteLast.slice(0, -1);
   document.getElementById("display").value = deleted;
 }
-function operators() {
-  let operatorcheck = document.getElementById("display").value;
-}
-
-function lastOperatorCheck() {
-  let check = document.getElementById("display").value;
-  let deleteOperator = check.slice;
-}
-
-
